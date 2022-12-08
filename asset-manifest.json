@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.328ab46b.js",
+    "main.css": "/static/css/main.1ba9acb7.css",
+    "main.js": "/static/js/main.d119dd67.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/creativity1.png": "/static/media/creativity1.445675a0a00c2757a1d6.png",
+    "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/timeManage.png": "/static/media/timeManage.4644a4b2b8ed5f538eec.png",
+    "static/media/dsa.png": "/static/media/dsa.77509298a343d123a7bd.png",
+    "static/media/chakraui.png": "/static/media/chakraui.15320604467d004df871.png",
+    "static/media/projectManagement.png": "/static/media/projectManagement.56532bbb9da241b0f1c8.png",
+    "static/media/backend.png": "/static/media/backend.cd86763da06f05c86ca6.png",
+    "static/media/problemSolv.png": "/static/media/problemSolv.ddf49384f01d0b6de6c0.png",
+    "static/media/collabrative.png": "/static/media/collabrative.697daf5b0a056e39d2ea.png",
+    "static/media/frontend-icon-22.jpg": "/static/media/frontend-icon-22.23cac2a4e78e5e715d52.jpg",
+    "static/media/boostrap.png": "/static/media/boostrap.c5dedb5348b058d36661.png",
+    "static/media/css.png": "/static/media/css.1a57e67ac1fd2ea84d64.png",
+    "static/media/mongodb.png": "/static/media/mongodb.7a16fc61d457c9e340e2.png",
+    "static/media/nodejs.png": "/static/media/nodejs.8e341cc00e4ec40c6a27.png",
+    "static/media/html.png": "/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/nextjs.png": "/static/media/nextjs.6db19b31cc0a2f63cff4.png",
+    "static/media/expressjs.webp": "/static/media/expressjs.b1ea2a56a1684a950424.webp",
+    "static/media/react.svg": "/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
+    "static/media/netlify.svg": "/static/media/netlify.7b25ee4c2e48d2f75857bcaff16fbc44.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.328ab46b.js.map": "/static/js/main.328ab46b.js.map",
+    "main.1ba9acb7.css.map": "/static/css/main.1ba9acb7.css.map",
+    "main.d119dd67.js.map": "/static/js/main.d119dd67.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.328ab46b.js"
+    "static/css/main.1ba9acb7.css",
+    "static/js/main.d119dd67.js"
   ]
 }
