@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d3a447b.css",
-    "main.js": "/static/js/main.a2caee98.js",
+    "main.css": "/static/css/main.234f4605.css",
+    "main.js": "/static/js/main.337a3eec.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/kindmeal.png": "/static/media/kindmeal.a5ba8ce7a3aa1e8d5fa6.png",
+    "static/media/ssense.png": "/static/media/ssense.5e257d830356e57f9b65.png",
     "static/media/creativity1.png": "/static/media/creativity1.445675a0a00c2757a1d6.png",
+    "static/media/indeed.png": "/static/media/indeed.7e31c20734761a927875.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/timeManage.png": "/static/media/timeManage.4644a4b2b8ed5f538eec.png",
     "static/media/dsa.png": "/static/media/dsa.77509298a343d123a7bd.png",
@@ -16,17 +19,18 @@
     "static/media/boostrap.png": "/static/media/boostrap.c5dedb5348b058d36661.png",
     "static/media/css.png": "/static/media/css.1a57e67ac1fd2ea84d64.png",
     "static/media/nodejs.png": "/static/media/nodejs.8e341cc00e4ec40c6a27.png",
+    "static/media/profilePicSmall.jpg": "/static/media/profilePicSmall.c6c92e55ea05f2fc41b9.jpg",
     "static/media/html.png": "/static/media/html.6e930594286d8afe4c79.png",
     "static/media/nextjs.png": "/static/media/nextjs.6db19b31cc0a2f63cff4.png",
     "static/media/react.svg": "/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/netlify.svg": "/static/media/netlify.7b25ee4c2e48d2f75857bcaff16fbc44.svg",
     "index.html": "/index.html",
-    "main.2d3a447b.css.map": "/static/css/main.2d3a447b.css.map",
-    "main.a2caee98.js.map": "/static/js/main.a2caee98.js.map",
+    "main.234f4605.css.map": "/static/css/main.234f4605.css.map",
+    "main.337a3eec.js.map": "/static/js/main.337a3eec.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d3a447b.css",
-    "static/js/main.a2caee98.js"
+    "static/css/main.234f4605.css",
+    "static/js/main.337a3eec.js"
   ]
 }
