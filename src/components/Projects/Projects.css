@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  transition: 0.3s ease;
+}
+
+.project_main_container {
+  padding: 60px 0;
+}
+
+.project_container {
+  width: 80%;
+  margin: auto;
+}
+
+.project_heading {
+  padding: 0 0 50px 0;
+  text-align: center;
+}
+
+.project_heading h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.project_heading span {
+  color: #e4002b;
+}
+
+.project_box {
+  padding: 20px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 10px;
+}
+
+.project_box:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  cursor: pointer;
+}
+
+.project_image img {
+  border-radius: 10px;
+  height: 170px;
+  transition: transform 0.5s linear;
+}
+.project_image img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+}
+
+.project_name {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.project_tech_stack {
+  padding: 10px 0;
+}
+
+.project_tech_stack h5 {
+  font-size: 17px;
+
+  font-weight: 500;
+}
+
+.project_tech_stack span {
+  font-size: 17px;
+  color: #e4002b;
+  font-weight: 600;
+}
+
+.project_icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.project_icon div {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.project_icon div:hover {
+  border-radius: 50%;
+  background-color: #e4002b;
+  color: #fff;
+}
+
+.project_icon a {
+  font-size: 30px;
+}
+.project_desc p {
+  font-size: 15px;
+  font-weight: 600;
+}

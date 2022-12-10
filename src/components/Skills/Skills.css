@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.skills_container {
+  width: 85%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.skills_heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.skills_heading h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.skills_heading span {
+  color: #e4002b;
+  
+}
+.skills_grid{
+  margin-bottom: 50px;
+}
+
+.skills_grid_box {
+  height: 170px;
+  background-color: #edf2f7;
+
+  border-radius: 10px;
+}
+.skills_grid_box:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.skills_grid_box_dark {
+  height: 170px;
+  background-color: #0f1624;
+  border-radius: 10px;
+}
+.skills_grid_box_dark:hover {
+  cursor: pointer;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.skills_grid_box_img {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_grid_box img {
+  width: 65%;
+  /* height: 75%; */
+}
+
+.skills_grid_box_dark img {
+  width: 70%;
+  height: 75%;
+}
+
+.skills_grid_box_h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------- */
+.skills_btn {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills_btn button {
+  padding: 8px 35px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid grey;
+}
+
+.skills_btn button:hover {
+  background-color: #e4002b;
+  color: #fff;
+}
+.skills_btn button:focus {
+  background-color: #e4002b;
+  color: #fff;
+  border: 2px solid #03a9f4;
+}

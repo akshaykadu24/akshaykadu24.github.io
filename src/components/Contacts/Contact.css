@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact_container {
+  width: 100%;
+  margin: auto;
+  padding: 70px 0;
+}
+.contact_content {
+  width: 85%;
+  margin: auto;
+}
+
+.contact_heading {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.contact_heading h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.contact_heading span {
+  color: #e4002b;
+}
+
+.input_box {
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 350px) {
+  .input_box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .input_box {
+    width: 70%;
+  }
+}
+
+.contact_icon {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px 17px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon_box {
+  width: 170px;
+  transition: transform 0.5s linear;
+}
+
+.icon_box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+}
+
+#icon1 {
+  background-color: #0984c2;
+}
+#icon2 {
+  background-color: rgb(39, 36, 36);
+}
+
+#icon3 {
+  background-color: rgb(226, 13, 13);
+}
+#icon4 {
+  background-color: blue;
+}
+#icon5 {
+  background-color: #0984c2;
+}
+.contact_information {
+  text-align: center;
+}
+.input_tag {
+  height: 45px;
+  width: 90%;
+  margin-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(207, 205, 205);
+  cursor: text;
+}
+
+.input_tag_text_message {
+  height: 150px;
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 1px solid rgb(207, 205, 205);
+  cursor: text;
+}
+
+.input_btn {
+  height: 45px;
+  width: 90%;
+  background-color: #e4002b;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.input_btn:hover {
+  cursor: pointer;
+  background-color: #eb144c;
+  transition: 0.6s ease;
+}
+
+.contact_last {
+  text-align: center;
+  padding: 70px 0 0 0;
+}
+.contact_last p {
+  font-weight: 400;
+  font-size: 17px;
+}

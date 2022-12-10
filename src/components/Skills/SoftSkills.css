@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.softskills_header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.softskills_header h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.softskills_header span {
+  color: #e4002b;
+}
+
+.main_container {
+  width: 100%;
+  background-color: #edf2f8;
+}
+
+.softskills_container {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.softskills {
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.softskills_text {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
+
+.softskills_box {
+  background-color: #0f1624;
+  height: 190px;
+  width: 220px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.5s linear;
+}
+
+.softskills_box:hover {
+  background-color: #350d36;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+}
+
+.skills_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.softskills_box img {
+  height: 110px;
+  width: 110px;
+  margin-top: 30px;
+}
+
+.softskills_box p {
+  margin-top: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
