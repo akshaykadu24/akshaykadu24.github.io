@@ -48,7 +48,7 @@ export const Projects = () => {
                 <HStack justifyContent="space-evenly"  marginTop="20px" marginBottom="10px">
                   <Box >
                     <a
-                      href="https://github.com/akshaykadu24/S-SCENCE.git"
+                      href="https://github.com/akshaykadu24/SSCENCE.git"
                       target="_blank"
                     >
                       <FaGithub />
@@ -160,7 +160,7 @@ export const Projects = () => {
                   </Box>
                   <Box >
                     <a
-                      href="https://cute-fairy-d32e92.netlify.app"
+                      href="https://teal-panda-e985d7.netlify.app"
                       target="_blank"
                     >
                       <FaExternalLinkAlt />
