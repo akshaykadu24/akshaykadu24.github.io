@@ -16,7 +16,7 @@ const Home = () => {
     <Box  >
 
     
-    <Flex  width="80%" margin="auto" paddingTop="50px" paddingBottom="100px"
+    <Flex  width="80%" margin="auto" paddingTop="90px" paddingBottom="100px"
             justifyContent="space-around">
         <Box  alignSelf="center" >
             <Text textAlign="start"  fontSize="xl" fontWeight="bold"  >Hello, My Name is</Text>
