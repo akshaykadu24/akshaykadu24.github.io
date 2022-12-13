@@ -1,7 +1,6 @@
-import { Box, Button, Circle, Flex, Image, Show, Spacer, Stack, Text, useColorMode, useMediaQuery } from '@chakra-ui/react'
+import { Box, Button, Circle, color, Flex, Image, Show, Spacer, Stack, Text, useColorMode, useMediaQuery } from '@chakra-ui/react'
 import React from 'react'
-import "./Home.css"
-import profile from "../Images/Portfolio/profilePicSmall.jpg"
+import profile from "./Images/Portfolio/profilePicSmall.jpg"
 import Typewriter from "typewriter-effect";
 // import { FaGratipay } from 'react-icons/fa'
 
@@ -9,22 +8,23 @@ const Home = () => {
     const {colorMode} = useColorMode()
     const isDark = colorMode === "dark"
 
-  const colorId = isDark? "dark":"home"
+  const colorId = isDark? "dark":"#edf2f8"
 
   return (
-    <Box >
+    <Box backgroundColor={colorId} >
    <Show above="lg" >
-    <Box id={colorId} >
+    <Box  >
 
     
-    <Flex  width="80%" margin="auto" paddingTop="50px" paddingBottom="200px"
+    <Flex  width="80%" margin="auto" paddingTop="50px" paddingBottom="100px"
             justifyContent="space-around">
         <Box  alignSelf="center" >
             <Text textAlign="start"  fontSize="xl" fontWeight="bold"  >Hello, My Name is</Text>
             <Text textAlign="start" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text" >Akshay Kadu</Text>
-            <div className="full">
-                    <p>I'm a</p>
-                    <span>
+            <Box  display="flex" alignItems="center" fontSize="34px" >
+            
+                    <p style={{marginTop:"-20px", fontWeight:"bold"}}>I'm a</p>
+                    <span style={{fontWeight:"bold", color:"#e4002b", margin: "0 0 20px 5px"}} >
                       <Typewriter
                         options={{
                           strings: [
@@ -36,9 +36,9 @@ const Home = () => {
                         }}
                       />
                     </span>
-                  </div>
+                  </Box>
             <Box  textAlign="start">
-              <Button border="2px solid #e4002b" bg="#e4002b" color="white" ><a href="./Download/Akshay_Kadu_Resume.pdf" download>RESUME</a></Button>
+              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" ><a href="./Download/Akshay_Kadu_Resume.pdf" download>RESUME</a></Button>
 
            </Box>        
         </Box>
@@ -70,9 +70,10 @@ const Home = () => {
         <Box  alignSelf="center" width="70%" margin="auto">
             <Text textAlign="start"  fontSize="xl" fontWeight="bold"  >Hello, My Name is</Text>
             <Text textAlign="start" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text" >Akshay Kadu</Text>
-            <div className="full">
-                    <p>I'm a</p>
-                    <span>
+            <Box display="flex" alignItems="center" fontSize="34px">
+
+                    <p style={{marginTop:"-20px", fontWeight:"bold"}}>I'm a</p>
+                    <span style={{fontWeight:"bold", color:"#e4002b", margin: "0 0 20px 5px"}} >
                       <Typewriter
                         options={{
                           strings: [
@@ -84,7 +85,7 @@ const Home = () => {
                         }}
                       />
                     </span>
-                  </div>
+                  </Box>
             <Box  textAlign="start">
               <Button border="2px solid #e4002b" bg="#e4002b" color="white" ><a href="./Download/Akshay_Kadu_Resume.pdf" download>RESUME</a></Button>
 

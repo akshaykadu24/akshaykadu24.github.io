@@ -2,18 +2,10 @@ import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
-  HStack,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack,
   useColorMode,
   Show,
   SimpleGrid,
@@ -23,11 +15,11 @@ import {
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Routes, Route, Link } from 'react-router-dom';
-import Home from './Home/Home';
-import  About  from './About/About';
-import { Skills } from './Skills/Skills';
-import {Contact} from "./Contacts/Contact";
-import { Projects} from "./Projects/Projects"
+import Home from './Home';
+import  About  from './About';
+import { Skills } from './Skills';
+import {Contact} from "./Contact";
+import { Projects} from "./Projects"
 
 
 
@@ -43,7 +35,7 @@ export default function Navbar() {
     <>
     {/* ----------------------------------------desktop------------------------------------------------- */}
       <Show above='800px' >
-        <Box bg={useColorModeValue('gray.100', 'gray.900')} >
+        <Box bg={useColorModeValue('gray.100', 'gray.900')} position="fixed" width="100%" >
           <Flex >
             <Box>
               <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
@@ -76,10 +68,9 @@ export default function Navbar() {
           {/* ----------------------------------------Tablate and Mobile------------------------------------------------- */}
 
       <Show below='800px'>
-        <Box bg={useColorModeValue('gray.100', 'gray.900')}>
+        <Box bg={useColorModeValue('gray.100', 'gray.900')} position="fixed" width="100%">
           <Flex justifyContent="space-between"  >
-            <Box fontSize="22px" m="10px" fontWeight="bold"  ><h2 >Ak<span style={{color:"#e4002b"}}>shay</span></h2></Box>
-
+          <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
             <Box>
               {isOpen ? (
                 <SimpleGrid columns={[1 ,1]}  >
@@ -133,18 +124,22 @@ export default function Navbar() {
 
       </Show>
 
+       
+      <Home />
+      <About/>
+      <Projects />
+      <Skills/>
+      <Contact />     
+          
 
-      <Routes>
-      <Route path='/' element={<Home />} >HOME</Route>
-
+      {/* <Routes>
+        <Route path='/' element={<Home />} >HOME</Route>
         <Route path='/home' element={<Home />} >HOME</Route>
         <Route path='/about' element={<About/>} >ABOUT</Route>
-      <Route path='/projects' element={<Projects />} >PROJECTS</Route>
-      <Route path='/skills' element={<Skills/>} >SKILLS</Route>
-      <Route path='/contact' element={<Contact />} >CONTACT</Route>
-      {/* <Route path='/resume' element={<Resume/>} >RESUME</Route> */}
-
-      </Routes>
+        <Route path='/projects' element={<Projects />} >PROJECTS</Route>
+        <Route path='/skills' element={<Skills/>} >SKILLS</Route>
+        <Route path='/contact' element={<Contact />} >CONTACT</Route>
+      </Routes> */}
 
     </>
 

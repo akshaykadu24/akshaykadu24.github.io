@@ -1,10 +1,9 @@
-import "./Contact.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
 import { FiMail } from "react-icons/fi";
-import { Box, SimpleGrid, useColorMode } from "@chakra-ui/react";
+import { Box, Button, color, Heading, HStack, Img, Input, SimpleGrid, Textarea, useColorMode } from "@chakra-ui/react";
 import React, { useRef } from "react";
 // import emailjs from "@emailjs/browser";
 import { Typewriter } from 'react-simple-typewriter';
@@ -35,149 +34,139 @@ export const Contact = () => {
   };
 
   return (
-    <div
+    <Box
+    
       style={{
         backgroundColor: colorMode == "light" ? "#edf2f8" : "#1a202c",
       }}
-      className="contact_container"
-      id="contact"
+     
     >
-      <div className="contact_content">
-        <div className="contact_heading">
-          <h2>
-            Con<span>tact</span><span></span>
-          </h2>
-        </div>
+      <Box >
+        <Box>
+          <Heading paddingTop="30px">
+            Con<span style={{color:"#e4002b"}}>tact</span>
+          </Heading>
+        </Box>
 
-        <div className="bothbox">
+        <Box >
           <SimpleGrid columns={[1, 1, 1, 2]} spacing="50px">
             <Box>
-              <div className="contact_image" style={{ padding: "80px 0 0 0" }}>
-                <img
+              <Box style={{ padding: "80px 0 0 0" }}>
+                <Img
                   src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
                   alt="Contact"
                 />
-              </div>
+              </Box>
             </Box>
             <Box>
-              <div className="input_box">
-                <div className="contact_icon">
-                  <SimpleGrid columns={[1, 2, 2, 2]} spacing="20px">
-                    <Box className="icon_box">
+              <Box width="80%" margin="auto" marginTop="60px">
+                <Box >
+                  <SimpleGrid columns={[1, 2, 2, 2]} spacing="15px">
+                    <Box backgroundColor="#0984c2" borderRadius="lg" width="70%" color="white"  >
                       <a
-                  href="https://www.linkedin.com/in/akshay-kadu-847311193/"
-                        rel="noopener norefferer"
+                        href="https://www.linkedin.com/in/akshay-kadu-847311193/"
                         target="_blank"
                       >
-                        <div className="icon" id="icon1">
-                          <FaLinkedin />
-                          <h3>LinkedIn</h3>
-                        </div>
+                        <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
+                          <FaLinkedin size="10%"  />
+                          <Heading size="sm"fontSize="sm" >LinkedIn</Heading>
+                        </HStack>
                       </a>
                     </Box>
-                    <Box className="icon_box">
+                    <Box backgroundColor="#272424" borderRadius="lg" width="70%" color="white" >
                       <a
                         href="https://github.com/akshaykadu24"
-                        rel="noopener norefferer"
                         target="_blank"
                       >
-                        <div className="icon" id="icon2">
-                          <FaGithub />
-                          <h3>GitHub</h3>
-                        </div>
+                        <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
+                          <FaGithub size="10%"  />
+                          <Heading size="sm"fontSize="sm" >GitHub</Heading>
+                        </HStack>
                       </a>
                     </Box>
-                    <Box className="icon_box">
+                    <Box backgroundColor="#e20d0d" borderRadius="lg" width="70%" color="white" >
                       <a
                         href="mailto:akshaykadu24@gmail.com"
-                        rel="noopener norefferer"
                         target="_blank"
                       >
-                        <div className="icon" id="icon3">
-                          <FiMail />
-                          <h3>Gmail</h3>
-                        </div>
+                        <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
+                          <FiMail size="10%"  />
+                          <Heading size="sm"fontSize="sm" >Gmail</Heading>
+                        </HStack>
                       </a>
                     </Box>
-                    <Box className="icon_box">
+                    <Box backgroundColor="#0984c2" borderRadius="lg" width="70%" color="white" >
                       <a
                         href="https://wa.me/9579550881"
-                        rel="noopener norefferer"
                         target="_blank"
-                      
                       >
-                        <div className="icon" id="icon5">
-                        <AiOutlineWhatsApp/>
-                          <h3>WhatsApp</h3>
-                        </div>
+                        <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
+                          <AiOutlineWhatsApp size="10%"  />
+                          <Heading size="sm"fontSize="sm" >WhatsApp</Heading>
+                        </HStack>
                       </a>
                     </Box>
-                    <Box className="icon_box">
+                    <Box backgroundColor="#0984c2" borderRadius="lg" width="70%" color="white" >
                       <a
                         href="/"
-                        rel="noopener norefferer"
                         target="_blank"
                       >
-                        <div className="icon" id="icon4">
-                          <BiPhoneCall />
-                          <h3>9579550881</h3>
-                        </div>
+                        <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
+                          <BiPhoneCall size="10%"  />
+                          <Heading size="sm"fontSize="sm" >9579550881</Heading>
+                        </HStack>
                       </a>
                     </Box>
                   </SimpleGrid>
-                </div>
+                </Box>
 
-                <div className="contact_information">
+                <Box marginTop="20px" border="1px solid gray " borderRadius="3%">
                   <form ref={form} onSubmit={sendEmail}>
-                    <div>
-                      <input
+                    <Box >
+                      <Input
                         required={true}
                         name="user_name"
-                        className="input_tag"
                         type="text"
                         placeholder="Full Name"
                       />
-                    </div>
-                    <div>
-                      <input
+                    </Box>
+                    <Box >
+                      <Input
                         required={true}
                         name="user_email"
-                        className="input_tag"
                         type="text"
                         placeholder="Email"
                       />
-                    </div>
-                    <div>
-                      <input
+                    </Box>
+                    <Box>
+                      <Input
                         required={true}
-                        className="input_tag"
                         type="number"
                         placeholder="Number"
                       />
-                    </div>
-                    <div className="input_message">
-                      <textarea
+                    </Box>
+                    <Box  >
+                      <Textarea
                         required={true}
                         name="message"
-                        className="input_tag_text_message"
                         type="text"
                         placeholder="Your Message"
                       />
-                    </div>
-                    <div>
-                      <button type="submit" className="input_btn">
+                    </Box>
+                    <Box>
+                      <Button type="submit" backgroundColor="#e4002b" color="white" _hover={{backgroundColor:"#eb144c"}}>
                         Send Message
-                      </button>
-                    </div>
+                      </Button>
+                    </Box>
                   </form>
-                </div>
-              </div>
+                </Box>
+              </Box>
             </Box>
           </SimpleGrid>
-        </div>
-      </div>
+        </Box>
+      </Box>
       <br/>
-      <div className="footer" style={{textAlign:"center" }}>
+      <Box className="footer" style={{textAlign:"center" }}>
             <span style={{fontSize:'20px',  color: 'red', fontWeight: 'bold' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
@@ -192,7 +181,7 @@ export const Contact = () => {
             // onType={handleType}
           />
         </span>
-        </div>
-    </div>
+        </Box>
+    </Box>
   );
 };
