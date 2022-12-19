@@ -2,6 +2,8 @@ import { Box, Button, Circle, color, Flex, Image, Show, Spacer, Stack, Text, use
 import React from 'react'
 import profile from "./Images/Portfolio/profilePicSmall.jpg"
 import Typewriter from "typewriter-effect";
+import pdf from "../components/Download/Akshay_Kadu_Resume.pdf"
+
 // import { FaGratipay } from 'react-icons/fa'
 
 const Home = () => {
@@ -38,7 +40,7 @@ const Home = () => {
                     </span>
                   </Box>
             <Box  textAlign="start">
-              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" ><a href="./Download/Akshay_Kadu_Resume.pdf" download>RESUME</a></Button>
+              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" ><a href={pdf} download="Akshay-Kadu-Resume">RESUME</a></Button>
 
            </Box>        
         </Box>
@@ -87,7 +89,7 @@ const Home = () => {
                     </span>
                   </Box>
             <Box  textAlign="start">
-              <Button border="2px solid #e4002b" bg="#e4002b" color="white" ><a href="./Download/Akshay_Kadu_Resume.pdf" download>RESUME</a></Button>
+              <Button border="2px solid #e4002b" bg="#e4002b" color="white" ><a href={pdf} download="Akshay-Kadu-Resume">RESUME</a></Button>
 
            </Box>        
         </Box>

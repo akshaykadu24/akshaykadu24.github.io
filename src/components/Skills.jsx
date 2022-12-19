@@ -18,8 +18,9 @@ import nextjs from "./Images/TechSkills/nextjs.png";
 
 import netlify from "./Images/TechSkills/netlify.svg";
 import { useState } from "react";
-import Github from "./Stars";
+import Github from "./Github";
 import Stars from "./Stars";
+import { BiZoomIn } from "react-icons/bi";
 
 export const Skills = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -135,7 +136,7 @@ export const Skills = () => {
       <Box width="80%"  margin="auto" marginBottom="40px" >
         <SimpleGrid columns={[2, 3, 4, 6]} spacing="30px" >
           {skills?.map((elem) => (
-            <Box key={elem.name} >
+            <Box key={elem.name} _hover={{"box-shadow": "rgba(0, 0, 0, 0.24) 0px 3px 8px","borderRadius":"10%"}} >
               <Box
               backgroundColor={colorMode == "dark"
               ? "#0f1624"
