@@ -13,6 +13,7 @@ export const Projects = () => {
   }, [colorMode])
   return (
     <Box
+      className="projects"
       paddingBottom="50px"
       style={{ backgroundColor: colorMode == "light" ? "#edf2f8" : "#1a202c", }}>
       <Box  >
@@ -56,7 +57,7 @@ export const Projects = () => {
                   </Box>
                   <Box >
                     <a
-                      href=""
+                      href="https://drive.google.com/file/d/1GormeSrFOllUcHqCOpQp9hhOiR9p9SuB/view?usp=share_link"
                       target="_blank"
                     >
                       <FaEye />

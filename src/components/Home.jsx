@@ -13,7 +13,7 @@ const Home = () => {
   const colorId = isDark? "dark":"#edf2f8"
 
   return (
-    <Box backgroundColor={colorId} >
+    <Box className="home" backgroundColor={colorId} >
    <Show above="lg" >
     <Box  >
 

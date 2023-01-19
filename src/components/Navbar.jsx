@@ -15,7 +15,8 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 import { FaMoon, FaSun } from "react-icons/fa";
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import  {Link}  from 'react-scroll';
 import Home from './Home';
 import  About  from './About';
 import { Skills } from './Skills';
@@ -35,7 +36,7 @@ export default function Navbar() {
   return (
     <>
     {/* ----------------------------------------desktop------------------------------------------------- */}
-      <Show above='800px' >
+      <Show  above='800px' >
         <Box bg={useColorModeValue('gray.100', 'gray.900')} position="fixed" width="100%" >
           <Flex >
             <Box>
@@ -47,11 +48,11 @@ export default function Navbar() {
                 <Flex >
                 <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/" ></Link></Box>
 
-                  <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/home" >HOME</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/about" >ABOUT</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/projects" >PROJECTS</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/skills" >SKILLS</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="/contact" >CONTACT</Link></Box>
+                  <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="home" >HOME</Link></Box>
+                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="about" >ABOUT</Link></Box>
+                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects" >PROJECTS</Link></Box>
+                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" >SKILLS</Link></Box>
+                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" >CONTACT</Link></Box>
                   <Box _hover={{bg:"#0984c2",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><a href={pdf} download="Akshay-Kadu-Resume">RESUME</a></Box>
                   {/* <Link to="/home" >HOME</Link> */}
 

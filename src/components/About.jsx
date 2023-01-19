@@ -6,14 +6,14 @@ import { Box, Heading, UnorderedList, ListItem, ListIcon } from "@chakra-ui/reac
  const About = () => {
  
   return (
-    <Box margin="50px">
+    <Box  margin={["0px","50px","50px","50px"]} className="about">
       <Box >
         <Heading>
           All <span style={{color:"#e4002b"}}>About</span> Me And My <span style={{color:"#e4002b"}}>Experience</span>
         </Heading>
       </Box>
 
-      <Box margin="30px"> 
+      <Box margin={["0px","0px","30px","30px"]}> 
               <Box textAlign="start" width="80%" margin="auto"  >
               <UnorderedList spacing={4}>
                     <ListItem>

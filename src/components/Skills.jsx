@@ -124,7 +124,7 @@ export const Skills = () => {
   // console.log(skills);
 
   return (
-    <Box >
+    <Box className="skills">
       <Box >
         <Heading margin="30px 0px 30px 0px">
           Tech <span style={{color:"#e4002b"}} >Stack</span>

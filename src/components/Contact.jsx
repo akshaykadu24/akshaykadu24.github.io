@@ -35,7 +35,7 @@ export const Contact = () => {
 
   return (
     <Box
-    
+    className="contact"
       style={{
         backgroundColor: colorMode == "light" ? "#edf2f8" : "#1a202c",
       }}

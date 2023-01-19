@@ -5,11 +5,8 @@ import React from "react";
 
 const Stars = () => {
   return (
-    <Box
+    <Box className="stars" >
       
-  
-    >
-      <Box  >
           <Box >
             <Heading marginTop="30px">
               Github <span style={{color:"#e4002b"}}>Statistics</span>
@@ -28,9 +25,6 @@ const Stars = () => {
               />
             </a>
           </Box>
-
-        
-      </Box>
     </Box>
   );
 };
