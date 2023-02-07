@@ -62,7 +62,7 @@ export const Contact = () => {
               <Box width="80%" margin="auto" marginTop="60px">
                 <Box >
                   <SimpleGrid columns={[1, 2, 2, 2]} spacing="15px">
-                    <Box backgroundColor="#0984c2" borderRadius="lg" width="70%" color="white"  >
+                    <Box backgroundColor="#0984c2" borderRadius="lg" width="95%" color="white"  >
                       <a
                         href="https://www.linkedin.com/in/akshay-kadu-847311193/"
                         target="_blank"
@@ -73,7 +73,7 @@ export const Contact = () => {
                         </HStack>
                       </a>
                     </Box>
-                    <Box backgroundColor="#272424" borderRadius="lg" width="70%" color="white" >
+                    <Box backgroundColor="#272424" borderRadius="lg" width="95%" color="white" >
                       <a
                         href="https://github.com/akshaykadu24"
                         target="_blank"
@@ -84,18 +84,18 @@ export const Contact = () => {
                         </HStack>
                       </a>
                     </Box>
-                    <Box backgroundColor="#e20d0d" borderRadius="lg" width="70%" color="white" >
+                    <Box backgroundColor="#e20d0d" borderRadius="lg" width="95%" color="white" >
                       <a
                         href="mailto:akshaykadu24@gmail.com"
                         target="_blank"
                       >
                         <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
                           <FiMail size="10%"  />
-                          <Heading size="sm"fontSize="sm" >Gmail</Heading>
+                          <Heading size="sm"fontSize="sm" >akshaykadu24@gmail.com</Heading>
                         </HStack>
                       </a>
                     </Box>
-                    <Box backgroundColor="#0984c2" borderRadius="lg" width="70%" color="white" >
+                    <Box backgroundColor="#0984c2" borderRadius="lg" width="95%" color="white" >
                       <a
                         href="https://wa.me/9579550881"
                         target="_blank"
@@ -106,7 +106,7 @@ export const Contact = () => {
                         </HStack>
                       </a>
                     </Box>
-                    <Box backgroundColor="#0984c2" borderRadius="lg" width="70%" color="white" >
+                    <Box backgroundColor="#0984c2" borderRadius="lg" width="95%" color="white" >
                       <a
                         href="/"
                         target="_blank"
