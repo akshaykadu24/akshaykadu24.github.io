@@ -126,7 +126,7 @@ export const Skills = () => {
   return (
     <Box className="skills">
       <Box >
-        <Heading margin="30px 0px 30px 0px">
+        <Heading padding="50px 0px 30px 0px">
           Tech <span style={{color:"#e4002b"}} >Stack</span>
         </Heading>
       </Box>
@@ -140,7 +140,7 @@ export const Skills = () => {
               <Box
               backgroundColor={colorMode == "dark"
               ? "#0f1624"
-              : "#edf2f7"}
+              : "#D5E6F9"}
               borderRadius="12%"
                 paddingTop="15px"
                 paddingBottom="10px"

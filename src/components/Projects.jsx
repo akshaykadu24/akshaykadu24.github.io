@@ -15,7 +15,7 @@ export const Projects = () => {
     <Box
       className="projects"
       paddingBottom="50px"
-      style={{ backgroundColor: colorMode == "light" ? "#edf2f8" : "#1a202c", }}>
+      style={{ backgroundColor: colorMode == "light" ? "#D5E6F9" : "#1a202c", }}>
       <Box  >
         <Box paddingTop="50px"
           paddingBottom="50px">
@@ -27,7 +27,7 @@ export const Projects = () => {
         <Box >
           <SimpleGrid columns={[1, 1, 2, 2]} spacing="40px" width="70%" margin="auto">
 
-          <Box style={{ backgroundColor: colorMode == "light" ? "#edf2f8" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+          <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
                   <Img src={wishkart} alt="wishkart" />
@@ -75,7 +75,7 @@ export const Projects = () => {
               </Box>
             </Box>
 
-            <Box style={{ backgroundColor: colorMode == "light" ? "#edf2f8" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
                   <Img src={nord} alt="clockify" />
@@ -123,7 +123,7 @@ export const Projects = () => {
                 </HStack>
               </Box>
             </Box>
-            <Box style={{ backgroundColor: colorMode == "light" ? "#edf2f8" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
                   <Img src={shop} alt="clockify" />
@@ -171,7 +171,7 @@ export const Projects = () => {
                 </HStack>
               </Box>
             </Box>
-            <Box style={{ backgroundColor: colorMode == "light" ? "#edf2f8" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
                   <Img src={indeed} alt="clockify" />

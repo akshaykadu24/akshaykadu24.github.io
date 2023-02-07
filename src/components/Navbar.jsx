@@ -37,14 +37,14 @@ export default function Navbar() {
     <>
     {/* ----------------------------------------desktop------------------------------------------------- */}
       <Show  above='800px' >
-        <Box bg={useColorModeValue('gray.100', 'gray.900')} position="fixed" width="100%" >
-          <Flex >
+        <Box bg={useColorModeValue("blue.200", 'gray.900')} position="fixed" width="100%" >
+          <Flex  m="0px 10px 0px 20px">
             <Box>
               <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
             </Box>
             <Spacer/>
             <Box>
-              <Box fontSize="22px" m="5px" >
+              <Box fontSize="22px" m="5px" mr={"10px"}  >
                 <Flex >
                 <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/" ></Link></Box>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
           {/* ----------------------------------------Tablate and Mobile------------------------------------------------- */}
 
       <Show below='800px'>
-        <Box bg={useColorModeValue('gray.100', 'gray.900')} position="fixed" width="100%">
+        <Box bg={useColorModeValue('blue.200', 'gray.900')} position="fixed" width="100%">
           <Flex justifyContent="space-between"  >
           <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
             <Box>

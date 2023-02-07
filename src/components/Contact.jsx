@@ -37,13 +37,13 @@ export const Contact = () => {
     <Box
     className="contact"
       style={{
-        backgroundColor: colorMode == "light" ? "#edf2f8" : "#1a202c",
+        backgroundColor: colorMode == "light" ? "#D5E6F9" : "#1a202c",
       }}
      
     >
       <Box >
         <Box>
-          <Heading paddingTop="30px">
+          <Heading paddingTop="50px">
             Con<span style={{color:"#e4002b"}}>tact</span>
           </Heading>
         </Box>

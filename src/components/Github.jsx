@@ -8,7 +8,7 @@ function Github() {
 
   return (
     <Box className="github" paddingBottom="70px" style={{
-      backgroundColor: colorMode == "light" ? "#edf2f8" : "#1a202c",
+      backgroundColor: colorMode == "light" ? "#D5E6F9" : "#1a202c",
       color: colorMode=="light"? "dark":"dark"
     }} >
       <Box >
