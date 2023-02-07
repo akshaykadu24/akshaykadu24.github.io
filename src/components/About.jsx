@@ -41,7 +41,6 @@ import { Box, Heading, UnorderedList, ListItem, ListIcon } from "@chakra-ui/reac
                   </UnorderedList>
               </Box>
         
-       
       </Box>
     </Box>
   );
