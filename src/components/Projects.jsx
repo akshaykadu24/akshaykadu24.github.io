@@ -57,7 +57,7 @@ export const Projects = () => {
                   </Box>
                   <Box >
                     <a
-                      href=""
+                      href="https://drive.google.com/file/d/1uPbOL6-v9kQhZ1oENMMsJ3n8Iro7xQ-d/view?usp=sharing"
                       target="_blank"
                     >
                       <FaEye />
