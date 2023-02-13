@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.de772f8d.js",
+    "main.js": "/static/js/main.dcf83873.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/wishkart.png": "/static/media/wishkart.e49498829011bf678ddd.png",
     "static/media/ssense.png": "/static/media/ssense.5e257d830356e57f9b65.png",
@@ -13,19 +13,22 @@
     "static/media/chakraui.png": "/static/media/chakraui.15320604467d004df871.png",
     "static/media/boostrap.png": "/static/media/boostrap.c5dedb5348b058d36661.png",
     "static/media/css.png": "/static/media/css.1a57e67ac1fd2ea84d64.png",
+    "static/media/mongodb.png": "/static/media/mongodb.7a16fc61d457c9e340e2.png",
     "static/media/nodejs.png": "/static/media/nodejs.8e341cc00e4ec40c6a27.png",
     "static/media/profilePicSmall.jpg": "/static/media/profilePicSmall.c6c92e55ea05f2fc41b9.jpg",
     "static/media/html.png": "/static/media/html.6e930594286d8afe4c79.png",
     "static/media/nextjs.png": "/static/media/nextjs.6db19b31cc0a2f63cff4.png",
+    "static/media/expressjs.webp": "/static/media/expressjs.b1ea2a56a1684a950424.webp",
     "static/media/react.svg": "/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/netlify.svg": "/static/media/netlify.7b25ee4c2e48d2f75857bcaff16fbc44.svg",
     "index.html": "/index.html",
+    "static/media/vercel.svg": "/static/media/vercel.e939159f8dcd5cad534a93caf63b0b3c.svg",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.de772f8d.js.map": "/static/js/main.de772f8d.js.map",
+    "main.dcf83873.js.map": "/static/js/main.dcf83873.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.de772f8d.js"
+    "static/js/main.dcf83873.js"
   ]
 }
