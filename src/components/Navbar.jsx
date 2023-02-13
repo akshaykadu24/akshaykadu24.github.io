@@ -32,12 +32,18 @@ export default function Navbar() {
 
   const isDark = colorMode === "dark"
 
+  const MobResumeButton =()=>{
+    window.open("https://drive.google.com/file/d/1dqcFhIZJqrJ41niNwXhMIGWFq6rT3sx0/view?usp=share_link","_black")
+     onClose()
+    console.log("ak")
+  }
+
   console.log(isOpen)
   return (
     <>
     {/* ----------------------------------------desktop------------------------------------------------- */}
       <Show  above='800px' >
-        <Box bg={useColorModeValue("blue.200", 'gray.900')} position="fixed" width="100%" >
+        <Box bg={useColorModeValue("blue.200", 'gray.900')} position="fixed" width="100%" zIndex={3} >
           <Flex  m="0px 10px 0px 20px">
             <Box>
               <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
@@ -70,19 +76,19 @@ export default function Navbar() {
           {/* ----------------------------------------Tablate and Mobile------------------------------------------------- */}
 
       <Show below='800px'>
-        <Box bg={useColorModeValue('blue.200', 'gray.900')} position="fixed" width="100%">
+        <Box bg={useColorModeValue('blue.200', 'gray.900')} position="fixed" zIndex={3} width="100%">
           <Flex justifyContent="space-between"  >
           <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
             <Box>
               {isOpen ? (
                 <SimpleGrid columns={[1 ,1]}  >
 
-                  <Button  fontWeight='bold' ><Link to="/home" >HOME</Link></Button>
-                  <Button  fontWeight='bold' ><Link to="/about" >ABOUT</Link></Button>
-                  <Button  fontWeight='bold' ><Link to="/projects" >PROJECTS</Link></Button>
-                  <Button  fontWeight='bold' ><Link to="/skills" >SKILLS</Link></Button>
-                  <Button  fontWeight='bold' ><Link to="/contact" >CONTACT</Link></Button>
-                  <Button  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1dqcFhIZJqrJ41niNwXhMIGWFq6rT3sx0/view?usp=share_link","_black")} ><a href={pdf} download="Akshay-Kadu-Resume"> RESUME </a></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="home" >HOME</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="about" >ABOUT</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="projects" >PROJECTS</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="skills" >SKILLS</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="contact" >CONTACT</Link></Button>
+                  <Button  fontWeight='bold' onClick={()=>MobResumeButton()} ><a href={pdf} download="Akshay-Kadu-Resume"> RESUME </a></Button>
                 </SimpleGrid >
               ) : null}
             </Box>

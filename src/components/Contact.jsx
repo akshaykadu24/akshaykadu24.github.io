@@ -50,7 +50,7 @@ export const Contact = () => {
 
         <Box >
           <SimpleGrid columns={[1, 1, 1, 2]} spacing="50px">
-            <Box>
+            <Box width={["70%","70%","70%","95%"]} margin="auto">
               <Box style={{ padding: "80px 0 0 0" }}>
                 <Img
                   src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
@@ -59,7 +59,7 @@ export const Contact = () => {
               </Box>
             </Box>
             <Box>
-              <Box width="80%" margin="auto" marginTop="60px">
+              <Box width="90%" margin="auto" marginTop="60px">
                 <Box >
                   <SimpleGrid columns={[1, 2, 2, 2]} spacing="15px">
                     <Box backgroundColor="#0984c2" borderRadius="lg" width="95%" color="white"  >
@@ -89,7 +89,7 @@ export const Contact = () => {
                         href="mailto:akshaykadu24@gmail.com"
                         target="_blank"
                       >
-                        <HStack spacing="20px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="20px" >
+                        <HStack spacing="10px" marginTop="4px" paddingBottom="10px" paddingTop="6px" marginLeft="4%" >
                           <FiMail size="10%"  />
                           <Heading size="sm"fontSize="sm" >akshaykadu24@gmail.com</Heading>
                         </HStack>

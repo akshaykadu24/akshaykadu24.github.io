@@ -12,12 +12,12 @@ const Stars = () => {
               Github <span style={{color:"#e4002b"}}>Statistics</span>
             </Heading>
           </Box>
-          <Box width="35%"  margin="auto" marginTop="30px"  >
+          <Box width={["60%","50%","45%","35%"]} margin="auto" marginTop="30px"  >
             <a href="https://github.com/akshaykadu24">
               <Img src="https://github-readme-streak-stats.herokuapp.com?user=akshaykadu24&theme=github-light&border_radius=5" />
             </a>
           </Box>
-          <Box width="35%"  margin="auto" marginTop="30px" marginBottom="20px">
+          <Box width={["60%","50%","45%","35%"]}  margin="auto" marginTop="30px" marginBottom="20px">
             <a href="https://github.com/akshaykadu24">
               <Img
                 align="center"
