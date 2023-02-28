@@ -11,8 +11,8 @@ const Stars = () => {
   let link3
   if(colorMode=="light"){
     link1 = "https://github-readme-stats.vercel.app/api?username=akshaykadu24&show_icons=true&locale=en&theme=vue&bg_color=d5e6f9&count_private=true&text_color=000000&border_radius=5"
-    link2 = "https://github-readme-streak-stats.herokuapp.com?user=akshaykadu24&mode=weekly&theme=vue&background=D5E6F9"
-    // &currStreakNum=000000&sideNums=000000
+    link2 = "https://github-readme-streak-stats.herokuapp.com?user=akshaykadu24&theme=vue&background=D5E6F9"
+    // &mode=weekly&currStreakNum=000000&sideNums=000000
     link3 = "https://github-readme-stats.vercel.app/api/top-langs/?username=akshaykadu24&theme=vue&show_icons=true&hide_border=false&layout=compact&bg_color=d5e6f9&text_color=000000"
   }else{
     link1 = "https://github-readme-stats.vercel.app/api?username=akshaykadu24&count_private=true&show_icons=true&theme=vue-dark&border_radius=5"
