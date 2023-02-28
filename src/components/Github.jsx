@@ -22,8 +22,8 @@ function Github() {
           Github <span style={{color:"#e4002b"}}>Calendar</span>
         </Heading>
       </Box>
-      <Box width="80%" border={"1px solid red"} margin="auto" backgroundColor={calColor}  >
-        <GitHubCalendar style={{ margin:"auto"}} username="akshaykadu24" />
+      <Box width={["90%","80%","80%","80%"]} margin="auto" backgroundColor={calColor}  >
+        <GitHubCalendar style={{ margin:"auto" }}  username="akshaykadu24" />
       </Box>
       
     </Box>
