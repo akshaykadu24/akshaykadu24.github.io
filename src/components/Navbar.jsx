@@ -16,7 +16,7 @@ import {
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Routes, Route } from 'react-router-dom';
-import  {Link}  from 'react-scroll';
+import  {Link,scroll}  from 'react-scroll';
 import Home from './Home';
 import  About  from './About';
 import { Skills } from './Skills';
@@ -46,7 +46,7 @@ export default function Navbar() {
         <Box bg={useColorModeValue("blue.200", 'gray.900')} position="fixed" width="100%" zIndex={3} >
           <Flex  m="0px 10px 0px 20px">
             <Box>
-              <Box cursor={"pointer"} fontSize="22px" m="10px" fontWeight="bold" ><Link to='home'><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Link></Box>
+              <Box cursor={"pointer"} fontSize="22px" m="10px" fontWeight="bold" ><Link to='home' smooth={true}><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Link></Box>
             </Box>
             <Spacer/>
             <Box>
@@ -54,11 +54,11 @@ export default function Navbar() {
                 <Flex >
                 <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/" ></Link></Box>
 
-                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="home" >HOME</Link></Box>
-                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="about" >ABOUT</Link></Box>
-                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects" >PROJECTS</Link></Box>
-                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" >SKILLS</Link></Box>
-                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" >CONTACT</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="home"  smooth={true} >HOME</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="about"  smooth={true} >ABOUT</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects"  smooth={true} >PROJECTS</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" smooth={true}>SKILLS</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" smooth={true}>CONTACT</Link></Box>
                   <Box cursor={"pointer"} _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Box>
                   {/* <Link to="/home" >HOME</Link> */}
 

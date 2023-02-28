@@ -18,6 +18,7 @@
     "react-github-calendar": "^3.4.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
