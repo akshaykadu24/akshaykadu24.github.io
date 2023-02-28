@@ -6,10 +6,10 @@ import { Box, Heading, UnorderedList, ListItem, ListIcon } from "@chakra-ui/reac
  const About = () => {
  
   return (
-    <Box  padding={["0px","30px","50px","60px"]} pl={["0px",'0px',"50px","50px"]} pr={["0px",'0px',"50px","50px"]} border="0px solid red" className="about">
+    <Box  padding={["55px","30px","50px","60px"]} pl={["0px",'0px',"50px","50px"]} pr={["0px",'0px',"50px","50px"]} border="0px solid red" className="about">
       <Box >
         <Heading>
-          All <span style={{color:"#e4002b"}}>About</span> Me And My <span style={{color:"#e4002b"}}>Experience</span>
+          About <span style={{color:"#e4002b"}}>Me</span> 
         </Heading>
       </Box>
 

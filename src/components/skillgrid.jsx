@@ -1,4 +1,4 @@
-import { Box, Img, SimpleGrid, useColorMode } from "@chakra-ui/react";
+import { Box, Image, SimpleGrid, useColorMode } from "@chakra-ui/react";
 
 
 const Skillgrid = ({skills})=>{
@@ -22,7 +22,7 @@ console.log(skills)
                 paddingBottom="10px"
               >
                 <Box width="65%"  margin="auto" >
-                  <Img height="90px" src={elem.url} alt="skills_logo" />
+                  <Image height="90px" src={elem.url} alt="skills_logo" />
                 </Box>
 
                 <Box marginTop="5px">

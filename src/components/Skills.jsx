@@ -15,12 +15,13 @@ import git from "./Images/TechSkills/git.png";
 import dsa from "./Images/TechSkills/dsa.png";
 import nodejs from "./Images/TechSkills/nodejs.png";
 import nextjs from "./Images/TechSkills/nextjs.png";
+import vscode from "./Images/TechSkills/vscode.png"
 
 import netlify from "./Images/TechSkills/netlify.svg";
 import vercel from "./Images/TechSkills/vercel.svg"
 import { useState } from "react";
 import Github from "./Github";
-import Stars from "./Stars";
+import Stats from "./Stats";
 import { BiZoomIn } from "react-icons/bi";
 import Skillgrid from "./skillgrid";
 
@@ -102,7 +103,12 @@ export const Skills = () => {
   ];
 
   let tools_data = [
-    
+    {
+      url: vscode,
+      name: "Vscode",
+      category1: "frontend",
+      category2: "backend",
+    },
     {
       url: git,
       name: "Git",
@@ -134,7 +140,7 @@ export const Skills = () => {
   return (
     <Box className="skills">
        <Box >
-        <Heading padding="50px 0px 30px 0px">
+        <Heading padding="55px 0px 30px 0px">
           Tech <span style={{color:"#e4002b"}} >Stack</span>
         </Heading>
       </Box>
@@ -149,7 +155,7 @@ export const Skills = () => {
        <Skillgrid skills={tools_data}/>
 
        <Github />
-      <Stars />
+      <Stats />
 
     </Box>
   );

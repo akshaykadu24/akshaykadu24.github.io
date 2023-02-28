@@ -46,7 +46,7 @@ export default function Navbar() {
         <Box bg={useColorModeValue("blue.200", 'gray.900')} position="fixed" width="100%" zIndex={3} >
           <Flex  m="0px 10px 0px 20px">
             <Box>
-              <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
+              <Box cursor={"pointer"} fontSize="22px" m="10px" fontWeight="bold" ><Link to='home'><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Link></Box>
             </Box>
             <Spacer/>
             <Box>
@@ -54,12 +54,12 @@ export default function Navbar() {
                 <Flex >
                 <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="/" ></Link></Box>
 
-                  <Box _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="home" >HOME</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="about" >ABOUT</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects" >PROJECTS</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" >SKILLS</Link></Box>
-                  <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" >CONTACT</Link></Box>
-                  <Box _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white" }}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="home" >HOME</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="about" >ABOUT</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects" >PROJECTS</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" >SKILLS</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" >CONTACT</Link></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Box>
                   {/* <Link to="/home" >HOME</Link> */}
 
 
@@ -78,7 +78,7 @@ export default function Navbar() {
       <Show below='800px'>
         <Box bg={useColorModeValue('blue.200', 'gray.900')} position="fixed" zIndex={3} width="100%">
           <Flex justifyContent="space-between"  >
-          <Box fontSize="22px" m="10px" fontWeight="bold" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Box>
+          <Box fontSize="22px" m="10px" fontWeight="bold" ><Link to="home" ><Heading  size="lg">Ak<span style={{color:"#e4002b"}}>shay</span></Heading></Link></Box>
             <Box>
               {isOpen ? (
                 <SimpleGrid columns={[1 ,1]}  >
@@ -133,7 +133,10 @@ export default function Navbar() {
       </Show>
 
        
+       <Box onChange={isOpen ? onClose : onOpen}>
+
       <Home />
+       </Box>
       <About/>
       <Projects />
       <Skills/>

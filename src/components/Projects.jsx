@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Heading, HStack, Img, SimpleGrid, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, HStack, Image, SimpleGrid, useColorMode } from "@chakra-ui/react";
 import indeed from "./Images/project/indeed.png";
 import shop from "./Images/project/ssense.png";
 import nord from "./Images/project/nordstrom.png"
@@ -17,7 +17,7 @@ export const Projects = () => {
       paddingBottom="50px"
       style={{ backgroundColor: colorMode == "light" ? "#D5E6F9" : "#1a202c", }}>
       <Box  >
-        <Box paddingTop="50px"
+        <Box paddingTop="55px"
           paddingBottom="50px">
           <Heading >
             <span style={{ color: "#e4002b" }}>My</span> Creative <span style={{ color: "#e4002b" }}>Projects </span>Section
@@ -30,7 +30,7 @@ export const Projects = () => {
           <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
-                  <Img src={wishkart} alt="wishkart" />
+                  <Image src={wishkart} alt="wishkart" />
                 </Box>
 
                 <Box margin="5px 0px 5px 0px">
@@ -78,7 +78,7 @@ export const Projects = () => {
             <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
-                  <Img src={nord} alt="clockify" />
+                  <Image src={nord} alt="clockify" />
                 </Box>
 
                 <Box margin="5px 0px 5px 0px">
@@ -113,7 +113,7 @@ export const Projects = () => {
                   </Box>
                   <Box >
                     <a
-                      href="https://nord-ecommerce-website.netlify.app/"
+                      href="https://nord-strom.vercel.app/"
                       target="_blank"
                     >
                       <FaExternalLinkAlt />
@@ -126,7 +126,7 @@ export const Projects = () => {
             <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
-                  <Img src={shop} alt="clockify" />
+                  <Image src={shop} alt="clockify" />
                 </Box>
 
                 <Box margin="5px 0px 5px 0px">
@@ -151,14 +151,14 @@ export const Projects = () => {
                       <FaGithub />
                     </a>
                   </Box>
-                  <Box >
+                  {/* <Box >
                     <a
                       href=""
                       target="_blank"
                     >
                       <FaEye />
                     </a>
-                  </Box>
+                  </Box> */}
                   <Box >
                     <a
                       href="https://project-sscence-mu.vercel.app/"
@@ -174,7 +174,7 @@ export const Projects = () => {
             <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
               <Box >
                 <Box >
-                  <Img src={indeed} alt="clockify" />
+                  <Image src={indeed} alt="clockify" />
                 </Box>
 
                 <Box margin="5px 0px 5px 0px">
@@ -199,14 +199,14 @@ export const Projects = () => {
                       <FaGithub />
                     </a>
                   </Box>
-                  <Box >
+                  {/* <Box >
                     <a
                       href=""
                       target="_blank"
                     >
                       <FaEye />
                     </a>
-                  </Box>
+                  </Box> */}
                   <Box >
                     <a
                       href="https://deft-florentine-9618bc.netlify.app/"

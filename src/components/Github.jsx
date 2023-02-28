@@ -1,11 +1,17 @@
 import { Box, Heading, useColorMode } from "@chakra-ui/react";
 import React from "react";
-import GitHubCalendar from "react-github-calendar";
+import GitHubCalendar from 'react-github-calendar';
+
 
 
 function Github() {
   const { colorMode, toggleColorMode } = useColorMode();
-
+  let calColor
+  if(colorMode=="light"){
+    calColor = "#d5e6f9"
+  }else{
+    calColor = "#1a202c"
+  }
   return (
     <Box className="github" paddingBottom="70px" style={{
       backgroundColor: colorMode == "light" ? "#D5E6F9" : "#1a202c",
@@ -16,8 +22,8 @@ function Github() {
           Github <span style={{color:"#e4002b"}}>Calendar</span>
         </Heading>
       </Box>
-      <Box width="80%" margin="auto" backgroundColor="white" padding="12px 0px 12px 15px">
-        <GitHubCalendar username="akshaykadu24" />
+      <Box width="80%" border={"1px solid red"} margin="auto" backgroundColor={calColor}  >
+        <GitHubCalendar style={{ margin:"auto"}} username="akshaykadu24" />
       </Box>
       
     </Box>

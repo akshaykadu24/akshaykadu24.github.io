@@ -3,7 +3,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
 import { FiMail } from "react-icons/fi";
-import { Box, Button, color, Heading, HStack, Img, Input, SimpleGrid, Textarea, useColorMode } from "@chakra-ui/react";
+import { Box, Button, color, Heading, HStack, Image, Img, Input, SimpleGrid, Textarea, useColorMode } from "@chakra-ui/react";
 import React, { useRef } from "react";
 // import emailjs from "@emailjs/browser";
 import { Typewriter } from 'react-simple-typewriter';
@@ -52,7 +52,7 @@ export const Contact = () => {
           <SimpleGrid columns={[1, 1, 1, 2]} spacing="50px">
             <Box width={["70%","70%","70%","95%"]} margin="auto">
               <Box style={{ padding: "80px 0 0 0" }}>
-                <Img
+                <Image
                   src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
                   alt="Contact"
                 />

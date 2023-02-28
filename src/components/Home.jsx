@@ -13,7 +13,7 @@ const Home = () => {
   const colorId = isDark? "dark":"#D5E6F9"
 
   return (
-    <Box className="home" backgroundColor={colorId} >
+    <Box className="home" backgroundColor={colorId} paddingBottom={"100px"} >
    <Show above="lg" >
     <Box  >
 
