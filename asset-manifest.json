@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.964c7bc4.js",
+    "main.js": "/static/js/main.617a19ae.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/wishkart.png": "/static/media/wishkart.e49498829011bf678ddd.png",
     "static/media/ssense.png": "/static/media/ssense.5e257d830356e57f9b65.png",
@@ -9,6 +9,7 @@
     "static/media/Akshay_Kadu_Resume.pdf": "/static/media/Akshay_Kadu_Resume.61366debbf8b32f0c15c.pdf",
     "static/media/indeed.png": "/static/media/indeed.7e31c20734761a927875.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/vscode.png": "/static/media/vscode.e66400756ccbdbfc0b31.png",
     "static/media/dsa.png": "/static/media/dsa.22a7d084e53fa9addcf2.png",
     "static/media/chakraui.png": "/static/media/chakraui.15320604467d004df871.png",
     "static/media/boostrap.png": "/static/media/boostrap.c5dedb5348b058d36661.png",
@@ -24,11 +25,11 @@
     "index.html": "/index.html",
     "static/media/vercel.svg": "/static/media/vercel.e939159f8dcd5cad534a93caf63b0b3c.svg",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.964c7bc4.js.map": "/static/js/main.964c7bc4.js.map",
+    "main.617a19ae.js.map": "/static/js/main.617a19ae.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.964c7bc4.js"
+    "static/js/main.617a19ae.js"
   ]
 }
