@@ -33,7 +33,7 @@ export default function Navbar() {
   const isDark = colorMode === "dark"
 
   const MobResumeButton =()=>{
-    window.open("https://drive.google.com/file/d/1dqcFhIZJqrJ41niNwXhMIGWFq6rT3sx0/view?usp=share_link","_black")
+    window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")
      onClose()
     console.log("ak")
   }
@@ -59,7 +59,7 @@ export default function Navbar() {
                   <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects" >PROJECTS</Link></Box>
                   <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" >SKILLS</Link></Box>
                   <Box _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" >CONTACT</Link></Box>
-                  <Box _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1dqcFhIZJqrJ41niNwXhMIGWFq6rT3sx0/view?usp=share_link","_black")} ><a href={pdf} download="Akshay-Kadu-Resume">RESUME</a></Box>
+                  <Box _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Box>
                   {/* <Link to="/home" >HOME</Link> */}
 
 
@@ -88,7 +88,7 @@ export default function Navbar() {
                   <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="projects" >PROJECTS</Link></Button>
                   <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="skills" >SKILLS</Link></Button>
                   <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="contact" >CONTACT</Link></Button>
-                  <Button  fontWeight='bold' onClick={()=>MobResumeButton()} ><a href={pdf} download="Akshay-Kadu-Resume"> RESUME </a></Button>
+                  <Button  fontWeight='bold' onClick={()=>MobResumeButton()} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume"> RESUME </a></Button>
                 </SimpleGrid >
               ) : null}
             </Box>

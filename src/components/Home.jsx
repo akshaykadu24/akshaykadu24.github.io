@@ -31,7 +31,7 @@ const Home = () => {
                         options={{
                           strings: [
                             "Full Stack Developer.",
-                            "Mern Stack Developer.",
+                            "MERN Stack Developer.",
                           ],
                           autoStart: true,
                           loop: true,
@@ -40,7 +40,7 @@ const Home = () => {
                     </span>
                   </Box>
             <Box  textAlign="start">
-              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1dqcFhIZJqrJ41niNwXhMIGWFq6rT3sx0/view?usp=share_link","_black")} ><a href={pdf} download="Akshay-Kadu-Resume">RESUME</a></Button>
+              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Button>
 
            </Box>        
         </Box>
@@ -89,7 +89,7 @@ const Home = () => {
                     </span>
                   </Box>
             <Box  textAlign="start">
-              <Button border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1dqcFhIZJqrJ41niNwXhMIGWFq6rT3sx0/view?usp=share_link","_black")} ><a href={pdf} download="Akshay-Kadu-Resume">RESUME</a></Button>
+              <Button border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Button>
 
            </Box>        
         </Box>
