@@ -15,9 +15,9 @@ const Stars = () => {
     // &mode=weekly&currStreakNum=000000&sideNums=000000
     link3 = "https://github-readme-stats.vercel.app/api/top-langs/?username=akshaykadu24&theme=vue&show_icons=true&hide_border=false&layout=compact&bg_color=d5e6f9&text_color=000000"
   }else{
-    link1 = "https://github-readme-stats.vercel.app/api?username=akshaykadu24&count_private=true&show_icons=true&theme=vue-dark&border_radius=5&bg_color=0f1624"
+    link1 = "https://github-readme-stats.vercel.app/api?username=akshaykadu24&count_private=true&show_icons=true&theme=vue-dark&border_radius=5&bg_color=0f1624&hide_border=true"
     link2 = "https://github-readme-streak-stats.herokuapp.com?user=akshaykadu24&theme=vue-dark&border_radius=5&background=0f1624"
-    link3 = "https://github-readme-stats.vercel.app/api/top-langs/?username=akshaykadu24&theme=vue-dark&show_icons=true&hide_border=false&layout=compact&bg_color=0f1624"
+    link3 = "https://github-readme-stats.vercel.app/api/top-langs/?username=akshaykadu24&theme=vue-dark&show_icons=true&hide_border=true&layout=compact&bg_color=0f1624"
   }
   return (
     <Box className="stars" paddingBottom={"30px"} >
