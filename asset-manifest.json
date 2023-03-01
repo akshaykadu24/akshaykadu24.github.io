@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.6a8fb3a5.js",
+    "main.js": "/static/js/main.75cec668.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/wishkart.png": "/static/media/wishkart.e49498829011bf678ddd.png",
     "static/media/ssense.png": "/static/media/ssense.5e257d830356e57f9b65.png",
     "static/media/nordstrom.png": "/static/media/nordstrom.022d3be3e3b224b13e36.png",
-    "static/media/Akshay_Kadu_Resume.pdf": "/static/media/Akshay_Kadu_Resume.227f6cea7ea9fd90708c.pdf",
+    "static/media/Akshay_Kadu_Resume.pdf": "/static/media/Akshay_Kadu_Resume.63fa3c14581f857eef51.pdf",
     "static/media/indeed.png": "/static/media/indeed.7e31c20734761a927875.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/vscode.png": "/static/media/vscode.e66400756ccbdbfc0b31.png",
@@ -25,11 +25,11 @@
     "index.html": "/index.html",
     "static/media/vercel.svg": "/static/media/vercel.e939159f8dcd5cad534a93caf63b0b3c.svg",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.6a8fb3a5.js.map": "/static/js/main.6a8fb3a5.js.map",
+    "main.75cec668.js.map": "/static/js/main.75cec668.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.6a8fb3a5.js"
+    "static/js/main.75cec668.js"
   ]
 }
