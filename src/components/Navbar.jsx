@@ -83,11 +83,11 @@ export default function Navbar() {
               {isOpen ? (
                 <SimpleGrid columns={[1 ,1]}  >
 
-                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="home" >HOME</Link></Button>
-                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="about" >ABOUT</Link></Button>
-                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="projects" >PROJECTS</Link></Button>
-                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="skills" >SKILLS</Link></Button>
-                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="contact" >CONTACT</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="home" smooth={true} >HOME</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="about" smooth={true} >ABOUT</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="projects" smooth={true} >PROJECTS</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="skills" smooth={true} >SKILLS</Link></Button>
+                  <Button  fontWeight='bold' onClick={isOpen ? onClose : onOpen} ><Link to="contact" smooth={true} >CONTACT</Link></Button>
                   <Button  fontWeight='bold' onClick={()=>MobResumeButton()} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume"> RESUME </a></Button>
                 </SimpleGrid >
               ) : null}
@@ -105,7 +105,7 @@ export default function Navbar() {
                     size={'md'}
                     icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                     aria-label={'Open Menu'}
-                    display={{ md: 'none' }}
+                    display={{ lg: 'none' }}
                     onClick={isOpen ? onClose : onOpen}
                     marginTop={"10px"}
                     marginRight="5"
