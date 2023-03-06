@@ -4,6 +4,7 @@ import indeed from "./Images/project/indeed.png";
 import shop from "./Images/project/ssense.png";
 import nord from "./Images/project/nordstrom.png"
 import wishkart from "./Images/project/wishkart.png"
+import musicose from "./Images/project/musicose.png"
 import { FaGithub, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 
 export const Projects = () => {
@@ -27,7 +28,54 @@ export const Projects = () => {
         <Box >
           <SimpleGrid columns={[1, 1, 2, 2]} spacing="40px" width="70%" margin="auto">
 
-          <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+          <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" ,border:"2px solid white" }}>
+              <Box >
+                <Box >
+                  <Image src={musicose} alt="musicose" />
+                </Box>
+
+                <Box margin="5px 0px 5px 0px">
+                  <Heading size="md" >Musicose <p></p> </Heading>
+                </Box>
+                <Box >
+                  <p>
+                    Musicose is an Indian Electronic manufacturing company we specializes in audio equipments with having partnership with Smartwatch brand.
+                  </p>
+                </Box>
+                <Box >
+                  <Heading size="sm" marginTop="10px">
+                    <span style={{ color: "#e4002b" }}>Tech Stack :</span> HTML, CSS, JavaScript, React, Redux, Ckakra UI, NodeJS, ExpressJS, MongoDB, mongoose, JWT 
+                  </Heading>
+                </Box>
+                <HStack justifyContent="space-evenly" marginTop="20px" marginBottom="10px">
+                  <Box >
+                    <a
+                      href="https://github.com/akshaykadu24/needy-direction-2456"
+                      target="_blank"
+                    >
+                      <FaGithub />
+                    </a>
+                  </Box>
+                  {/* <Box >
+                    <a
+                      href=""
+                      target="_blank"
+                    >
+                      <FaEye />
+                    </a>
+                  </Box> */}
+                  <Box >
+                    <a
+                      href="https://needy-direction-2456.vercel.app/"
+                      target="_blank"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                  </Box>
+                </HStack>
+              </Box>
+            </Box>
+          <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" ,border:"2px solid white"  }}>
               <Box >
                 <Box >
                   <Image src={wishkart} alt="wishkart" />
@@ -43,7 +91,7 @@ export const Projects = () => {
                 </Box>
                 <Box >
                   <Heading size="sm" marginTop="10px">
-                    <span style={{ color: "#e4002b" }}>Tech Stack :</span> React Redux,,JavaScript,Ckakra UI, Html, CSS
+                    <span style={{ color: "#e4002b" }}>Tech Stack :</span>  HTML, CSS, JavaScript, React, Redux, Ckakra UI, axios
                   </Heading>
                 </Box>
                 <HStack justifyContent="space-evenly" marginTop="20px" marginBottom="10px">
@@ -75,7 +123,7 @@ export const Projects = () => {
               </Box>
             </Box>
 
-            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" ,border:"2px solid white"  }}>
               <Box >
                 <Box >
                   <Image src={nord} alt="clockify" />
@@ -91,7 +139,7 @@ export const Projects = () => {
                 </Box>
                 <Box >
                   <Heading size="sm" marginTop="10px">
-                    <span style={{ color: "#e4002b" }}>Tech Stack :</span> React, Redux, JavaScript, CSS, axios, Chakra UI.
+                    <span style={{ color: "#e4002b" }}>Tech Stack :</span> HTML, CSS, JavaScript, React, Redux, axios, Chakra UI.
                   </Heading>
                 </Box>
                 <HStack justifyContent="space-evenly" marginTop="20px" marginBottom="10px">
@@ -123,7 +171,7 @@ export const Projects = () => {
                 </HStack>
               </Box>
             </Box>
-            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" ,border:"2px solid white"  }}>
               <Box >
                 <Box >
                   <Image src={shop} alt="clockify" />
@@ -139,7 +187,7 @@ export const Projects = () => {
                 </Box>
                 <Box >
                   <Heading size="sm" marginTop="10px">
-                    <span style={{ color: "#e4002b" }}>Tech Stack :</span> React-js, JavaScript, CSS, axios, Chakra UI.
+                    <span style={{ color: "#e4002b" }}>Tech Stack :</span> HTML, CSS, JavaScript, React-js, axios, Chakra UI.
                   </Heading>
                 </Box>
                 <HStack justifyContent="space-evenly" marginTop="20px" marginBottom="10px">
@@ -171,7 +219,8 @@ export const Projects = () => {
                 </HStack>
               </Box>
             </Box>
-            <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ border: "2px solid red" }}>
+
+            {/* <Box style={{ backgroundColor: colorMode == "light" ? "#AFDAFC" : "#0f1624", }} borderRadius="5%" boxShadow="2xl" _hover={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" ,border:"2px solid white"  }}>
               <Box >
                 <Box >
                   <Image src={indeed} alt="clockify" />
@@ -199,14 +248,14 @@ export const Projects = () => {
                       <FaGithub />
                     </a>
                   </Box>
-                  {/* <Box >
+                  <Box >
                     <a
                       href=""
                       target="_blank"
                     >
                       <FaEye />
                     </a>
-                  </Box> */}
+                  </Box>
                   <Box >
                     <a
                       href="https://deft-florentine-9618bc.netlify.app/"
@@ -217,7 +266,7 @@ export const Projects = () => {
                   </Box>
                 </HStack>
               </Box>
-            </Box>
+            </Box> */}
             
 
           </SimpleGrid>
