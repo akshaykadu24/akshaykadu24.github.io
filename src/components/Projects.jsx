@@ -113,7 +113,7 @@ export const Projects = () => {
                   </Box>
                   <Box >
                     <a
-                      href="https://wishkart.vercel.app/"
+                      href="https://wish-kart.vercel.app/"
                       target="_blank"
                     >
                       <FaExternalLinkAlt />
