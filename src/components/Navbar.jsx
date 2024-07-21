@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import pdf from "../components/Download/Akshay_Kadu_Resume.pdf"
 import {
   Box,
@@ -13,10 +12,9 @@ import {
   Spacer,
   Heading,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { FaMoon, FaSun } from "react-icons/fa";
-import { Routes, Route } from 'react-router-dom';
-import  {Link,scroll}  from 'react-scroll';
+import  {Link}  from 'react-scroll';
 import Home from './Home';
 import  About  from './About';
 import { Skills } from './Skills';
