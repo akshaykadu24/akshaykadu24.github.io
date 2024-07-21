@@ -40,7 +40,7 @@ const Home = () => {
                     </span>
                   </Box>
             <Box  textAlign="start">
-              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Button>
+              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1bQUg9FNHTkBefFIz_4GE62IamQpJfeQo/view?usp=sharing","_black")} ><a href={pdf} download="Akshay-Kadu-Full-Stack-Resume">RESUME</a></Button>
 
            </Box>        
         </Box>

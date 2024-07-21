@@ -59,7 +59,7 @@ export default function Navbar() {
                   <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="projects"  smooth={true} >PROJECTS</Link></Box>
                   <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' ><Link to="skills" smooth={true}>SKILLS</Link></Box>
                   <Box cursor={"pointer"} _hover={{bg:"#e4002b",color:"white"}}paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"   fontWeight='bold' ><Link to="contact" smooth={true}>CONTACT</Link></Box>
-                  <Box cursor={"pointer"} _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Box>
+                  <Box cursor={"pointer"} _hover={{bg:"#0984c2",color:"white"}} style={{_hover:<h1>ak</h1>}} paddingTop="5px" borderRadius="12%"  padding="5px 5px 0px 5px"  fontWeight='bold' onClick={()=>window.open("https://drive.google.com/file/d/1bQUg9FNHTkBefFIz_4GE62IamQpJfeQo/view?usp=drive_link","_black")} ><a href={pdf} download="Akshay-Kadu-Full-Stack-Resume">RESUME</a></Box>
                   {/* <Link to="/home" >HOME</Link> */}
 
 

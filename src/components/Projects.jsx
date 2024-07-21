@@ -50,7 +50,7 @@ export const Projects = () => {
                 <HStack justifyContent="space-evenly" marginTop="20px" marginBottom="10px">
                   <Box >
                     <a
-                      href="https://github.com/akshaykadu24/needy-direction-2456"
+                      href="https://github.com/akshaykadu24/Musicose"
                       target="_blank"
                     >
                       <FaGithub />
@@ -66,7 +66,7 @@ export const Projects = () => {
                   </Box> */}
                   <Box >
                     <a
-                      href="https://needy-direction-2456.vercel.app/"
+                      href="https://musicose.vercel.app/"
                       target="_blank"
                     >
                       <FaExternalLinkAlt />
