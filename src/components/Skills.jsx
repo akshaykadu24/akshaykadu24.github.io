@@ -19,6 +19,11 @@ import vscode from "./Images/TechSkills/vscode.png"
 
 import netlify from "./Images/TechSkills/netlify.svg";
 import vercel from "./Images/TechSkills/vercel.svg"
+import copilot from "./Images/TechSkills/copilot.svg";
+import kiro from "./Images/TechSkills/kiro.svg";
+import claude from "./Images/TechSkills/claude.svg";
+import bitbucket from "./Images/TechSkills/bitbucket.svg";
+import jira from "./Images/TechSkills/jira.svg";
 import { useState } from "react";
 import Github from "./Github";
 import Stats from "./Stats";
@@ -124,12 +129,44 @@ export const Skills = () => {
     {
       url: vercel,
       name: "Vercel",
+      invertOnDark: true,
       category1: "frontend",
       category2: "backend",
     },
      {
       url: postman,
       name: "Postman",
+      category1: "frontend",
+      category2: "backend",
+    },
+    {
+      url: bitbucket,
+      name: "Bitbucket",
+      category1: "frontend",
+      category2: "backend",
+    },
+    {
+      url: jira,
+      name: "Jira",
+      category1: "frontend",
+      category2: "backend",
+    },
+    {
+      url: copilot,
+      name: "GitHub Copilot",
+      invertOnDark: true,
+      category1: "frontend",
+      category2: "backend",
+    },
+    {
+      url: claude,
+      name: "Claude",
+      category1: "frontend",
+      category2: "backend",
+    },
+    {
+      url: kiro,
+      name: "Kiro",
       category1: "frontend",
       category2: "backend",
     },

@@ -1,101 +1,119 @@
-import { Box, Button, Circle, color, Flex, Image, Show, Spacer, Stack, Text, useColorMode, useMediaQuery } from '@chakra-ui/react'
+import { Box, Button, Flex, HStack, Image, Text, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import profile from "./Images/Portfolio/profilePicSmall.jpg"
 import Typewriter from "typewriter-effect";
-import pdf from "../components/Download/Akshay_Kadu_Resume.pdf"
+import { scroller } from "react-scroll";
 
-// import { FaGratipay } from 'react-icons/fa'
+const ACCENT = "#e4002b"
+// Google Drive direct-download link, so clicking downloads the pdf instead of opening Drive
+const RESUME_LINK = "https://drive.google.com/uc?export=download&id=1JS__OX1UjnBB8OU8Ehx_WM2eGyKX69yK"
 
 const Home = () => {
-    const {colorMode} = useColorMode()
-    const isDark = colorMode === "dark"
+  const { colorMode } = useColorMode()
+  const isDark = colorMode === "dark"
 
-  const colorId = isDark? "dark":"#D5E6F9"
+  const scrollToProjects = () => scroller.scrollTo("projects", { smooth: true, offset: -60 })
 
   return (
-    <Box className="home" backgroundColor={colorId} paddingBottom={"100px"} >
-   <Show above="lg" >
-    <Box  >
-
-    
-    <Flex  width="80%" margin="auto" paddingTop="90px" paddingBottom="120px"
-            justifyContent="space-around">
-        <Box  alignSelf="center" >
-            <Text textAlign="start"  fontSize="xl" fontWeight="bold"  >Hello, My Name is</Text>
-            <Text textAlign="start" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text" >Akshay Kadu</Text>
-            <Box  display="flex" alignItems="center" fontSize="34px"  >
-            
-                    <p style={{marginTop:"-20px", fontWeight:"bold"}}>I'm a</p>
-                    <span style={{fontWeight:"bold", color:"#e4002b", margin: "0 0 20px 5px"}} >
-                      <Typewriter
-                        options={{
-                          strings: [
-                            "Full Stack Developer.",
-                            "MERN Stack Developer.",
-                          ],
-                          autoStart: true,
-                          loop: true,
-                        }}
-                      />
-                    </span>
-                  </Box>
-            <Box  textAlign="start">
-              <Button _hover={{color:"black"}} border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1bQUg9FNHTkBefFIz_4GE62IamQpJfeQo/view?usp=sharing","_black")} ><a href={pdf} download="Akshay-Kadu-Full-Stack-Resume">RESUME</a></Button>
-
-           </Box>        
+    <Box className="home" backgroundColor={isDark ? "dark" : "#D5E6F9"}>
+      <Flex
+        width={["90%", "85%", "80%", "80%"]}
+        margin="auto"
+        paddingTop={["100px", "110px", "110px", "150px"]}
+        paddingBottom={["60px", "70px", "70px", "180px"]}
+        direction={["column", "column", "column", "row"]}
+        align="center"
+        justify="space-between"
+        gap={["36px", "40px", "40px", "60px"]}
+      >
+        {/* photo first on mobile, on the right on desktop */}
+        <Box order={[0, 0, 0, 1]} position="relative" flexShrink={0}>
+          <Box
+            position="absolute"
+            top={["14px", "18px", "18px", "24px"]}
+            left={["14px", "18px", "18px", "24px"]}
+            boxSize={["220px", "260px", "260px", "300px"]}
+            borderRadius="full"
+            bg={isDark ? "blue.100" : "black"}
+            opacity="0.1"
+          />
+          <Image
+            position="relative"
+            borderRadius="full"
+            boxSize={["220px", "260px", "260px", "300px"]}
+            objectFit="cover"
+            src={profile}
+            alt="Akshay Kadu"
+          />
         </Box>
-        <Spacer/>
-        <Box  >
-          {
-            isDark? <Circle position="absolute" margin="30px " zIndex={1}  bg="blue.100" opacity="0.1" w="300px" h="300px" alignSelf="flex-end"  ></Circle>
-            :       <Circle position="absolute" margin="30px " zIndex={1}  bg="black" opacity="0.1" w="300px" h="300px" alignSelf="flex-end"  ></Circle>
 
-          }
-          <Image alignContent="center" position="relative" zIndex={2}  marginTop="80px"  opacity="1.1" borderRadius="full"  boxSize="300px"  src={profile} />
+        <Box textAlign={["center", "center", "center", "start"]}>
+          <Text fontSize={["16px", "18px", "20px", "xl"]} fontWeight="bold">
+            Hello, My Name is
+          </Text>
+          <Text
+            fontSize={["40px", "48px", "56px", "6xl"]}
+            fontWeight="bold"
+            lineHeight="1.2"
+            bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
+            bgClip="text"
+          >
+            Akshay Kadu
+          </Text>
+
+          {/* fixed height so the layout doesn't jump while the text types */}
+          <Flex
+            fontSize={["20px", "24px", "30px", "34px"]}
+            fontWeight="bold"
+            gap="8px"
+            minHeight="1.5em"
+            marginTop="6px"
+            justify={["center", "center", "center", "flex-start"]}
+          >
+            <span>I'm a</span>
+            <Box as="span" color={ACCENT}>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Full Stack Developer.",
+                    "MERN Stack Developer.",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Box>
+          </Flex>
+
+          <HStack
+            spacing="12px"
+            marginTop="28px"
+            justify={["center", "center", "center", "flex-start"]}
+          >
+            <Button
+              as="a"
+              href={RESUME_LINK}
+              border={`2px solid ${ACCENT}`}
+              bg={ACCENT}
+              color="white"
+              _hover={{ bg: "#b80023", borderColor: "#b80023" }}
+            >
+              RESUME
+            </Button>
+            <Button
+              onClick={scrollToProjects}
+              variant="outline"
+              borderWidth="2px"
+              borderColor={ACCENT}
+              color={ACCENT}
+              _hover={{ bg: ACCENT, color: "white" }}
+            >
+              VIEW PROJECTS
+            </Button>
+          </HStack>
         </Box>
-      
-    </Flex>
+      </Flex>
     </Box>
-   </Show>
-      <Show below='lg' >
-        <Box id={colorId} paddingTop="1px" >
-          
-        
-        <Box  >
-          {
-            isDark? <Circle position="absolute" zIndex={1} margin="auto" marginLeft={["10%","30%","30%"]} marginTop="-30px"  bg="blue.100" opacity="0.1" w="300px" h="300px" alignSelf="flex-end"  ></Circle>
-            :       <Circle position="absolute" zIndex={1} margin="auto" marginLeft={["10%","30%","30%"]} marginTop="-30px" bg="black" opacity="0.1" w="300px" h="300px" alignSelf="flex-end"  ></Circle>
-
-          }
-          <Image alignContent="center" position="relative" zIndex={2} margin="auto" marginRight="30%" marginTop="80px"  opacity="1.1" borderRadius="full"  boxSize="300px"  src={profile} />
-        </Box>
-        <Box  alignSelf="center" width="70%" margin="auto">
-            <Text textAlign="start"  fontSize={["15px","17px","20px","20px"]} fontWeight="bold"  >Hello, My Name is</Text>
-            <Text textAlign="start" fontSize="38px" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text" >Akshay Kadu</Text>
-            <Box display="flex" alignItems="center" fontSize={["17px","22px","30px","34px"]}>
-
-                    <p style={{marginTop:"-20px", fontWeight:"bold"}}>I'm a</p>
-                    <span style={{fontWeight:"bold", color:"#e4002b", margin: "0 0 20px 5px"}} >
-                      <Typewriter
-                        options={{
-                          strings: [
-                            "Full Stack Developer.",
-                            "Mern Stack Developer.",
-                          ],
-                          autoStart: true,
-                          loop: true,
-                        }}
-                      />
-                    </span>
-                  </Box>
-            <Box  textAlign="start">
-              <Button border="2px solid #e4002b" bg="#e4002b" color="white" onClick={()=>window.open("https://drive.google.com/file/d/1PW0oarQKUlCUoDq8WO8dnBKRAYoelsZB/view?usp=share_link","_black")} ><a href={pdf} download="fw19_0616-Akshay-Kadu-Resume">RESUME</a></Button>
-
-           </Box>        
-        </Box>
-       </Box>
-      </Show>
-      </Box>
   )
 }
 
